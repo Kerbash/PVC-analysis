@@ -54,45 +54,6 @@ def plot_pairs(_df, _pair_dict, target, title):
                                   hue=target,
                                   normalize=False)
 
-    # plot a line from each of the OR to _crs
-    _already_labeled = []
-    for _crs, _optimal in _pair_dict.items():
-        try:
-            _crs_x, _crs_y = pca_used_df.loc[_crs, ['PC1', 'PC2']]
-            # assert and make sure its float
-            assert isinstance(_crs_x, float)
-            assert isinstance(_crs_y, float)
-            _or_x, _or_y = pca_used_df.loc[_optimal, ['PC1', 'PC2']]
-            # assert and make sure its float
-            assert isinstance(_or_x, float)
-            assert isinstance(_or_y, float)
-
-            # Add an arrow with a larger head
-            _plt.annotate('', xy=(_crs_x, _crs_y), xytext=(_or_x, _or_y),
-                          arrowprops=dict(facecolor='black', edgecolor='black',
-                                          arrowstyle='->', lw=1,
-                                          mutation_scale=15))  # Increase the mutation_scale for bigger arrowhead
-
-            # label each points with the index
-            if _crs not in _already_labeled:
-                _plt.text(_crs_x, _crs_y, _crs, fontsize=8)
-                _already_labeled.append(_crs)
-            if _optimal not in _already_labeled:
-                _plt.text(_or_x, _or_y, _optimal, fontsize=8)
-                _already_labeled.append(_optimal)
-
-        except KeyError:
-            pass
-
-        except Exception as e:
-            # if assert fails print the current _crs and optimal (fetch both of those rows)
-            print("CRS")
-            print(pca_used_df.loc[_crs])
-            print("Optimal")
-            print(pca_used_df.loc[_optimal])
-            # stop the loop
-            raise e
-
     return _plt
 
 
