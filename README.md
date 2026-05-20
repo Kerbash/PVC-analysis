@@ -1,9 +1,10 @@
+# PVC-fold normalization
+Pair Vector Centralization (PVC) compensates for variations in protein abundance and normalize samples across experimental conditions.
+
+
 # CAR-T Analysis Pipeline
 
 A prototype computational pipeline that tries to surface candidate protein–protein interaction (PPI) signatures from a noisy CAR-T cell therapy dataset. It was developed to attack one particularly stubborn data-quality pattern; two other independently-built approaches were developed alongside it as cross-checks on the same dataset.
-
-# PVC-fold normalization
-Pair Vector Centralization (PVC) compensates for variations in protein abundance and normalize samples across experimental conditions.
 
 
 This is exploratory, hypothesis-generating code. The intended output is a short list of PPI candidates worth following up on biologically — not effect sizes, not a tuned classifier, and not a general-purpose tool.
