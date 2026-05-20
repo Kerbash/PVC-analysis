@@ -94,7 +94,7 @@ A local `.venv/` is included; install runtime dependencies into it: `pandas`, `n
 These choices are acceptable for a prototype whose findings are re-checked by independent methods. They would not be acceptable for a standalone deliverable. The framing is the difference.
 
 ## Related publication
-I. Draper, W.  Selke, S. A. Ritmeester-Loy, F. Harsh , C. Annesley , C. Summers, R. Gardner , W. Kim, and S. Smith,  [https://pmc.ncbi.nlm.nih.gov/articles/PMC12636892](CD28 signaling complexes are correlated with patient outcomes in anti-CD19 41BB-costimulation CAR T cell therapy) . Journal for Immunotherapy of Cancer 13.11 (2025): e013023.
+I. Draper, W.  Selke, S. A. Ritmeester-Loy, F. Harsh , C. Annesley , C. Summers, R. Gardner , W. Kim, and S. Smith,  [CD28 signaling complexes are correlated with patient outcomes in anti-CD19 41BB-costimulation CAR T cell therapy](https://pmc.ncbi.nlm.nih.gov/articles/PMC12636892) . Journal for Immunotherapy of Cancer 13.11 (2025): e013023.
 
 
 
