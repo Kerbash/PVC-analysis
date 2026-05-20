@@ -2,6 +2,10 @@
 
 A prototype computational pipeline that tries to surface candidate protein–protein interaction (PPI) signatures from a noisy CAR-T cell therapy dataset. It was developed to attack one particularly stubborn data-quality pattern; two other independently-built approaches were developed alongside it as cross-checks on the same dataset.
 
+# PVC-fold normalization
+Pair Vector Centralization (PVC) compensates for variations in protein abundance and normalize samples across experimental conditions.
+
+
 This is exploratory, hypothesis-generating code. The intended output is a short list of PPI candidates worth following up on biologically — not effect sizes, not a tuned classifier, and not a general-purpose tool.
 
 ## Background
@@ -88,3 +92,10 @@ A local `.venv/` is included; install runtime dependencies into it: `pandas`, `n
 - Top-feature performance is not validated against an independent cohort within this repository.
 
 These choices are acceptable for a prototype whose findings are re-checked by independent methods. They would not be acceptable for a standalone deliverable. The framing is the difference.
+
+## Related publication
+I. Draper, W.  Selke, S. A. Ritmeester-Loy, F. Harsh , C. Annesley , C. Summers, R. Gardner , W. Kim, and S. Smith,  [https://pmc.ncbi.nlm.nih.gov/articles/PMC12636892/][CD28 signaling complexes are correlated with patient outcomes in anti-CD19 41BB-costimulation CAR T cell therapy]. Journal for Immunotherapy of Cancer 13.11 (2025): e013023.
+
+
+
+
